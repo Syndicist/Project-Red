@@ -5,13 +5,13 @@ if(!place_meeting(x,y+1,Solid))
     vspd += grav;
     
     // Player is in the air
-    sprite_index = spr_player_jump;
+    //sprite_index = spr_player1_jump;
     image_speed = 0;
     image_index = (vspd > 0);    
     
     // Control jump height
     if(space_release && vspd < -8)
-        vspd = -8;
+        vspd = -jspd;
         
     // Standing jump speed
     if(right && hspd <=0)
@@ -19,7 +19,7 @@ if(!place_meeting(x,y+1,Solid))
     if(left && hspd >= 0)
         hspd = -spd/2;
     if(alarm[0]>0 && space)
-        vspd = -12;
+        vspd = jspd;
 } 
 else 
 {
@@ -29,20 +29,20 @@ else
     // Standing Jump Height
     if(space && hspd == 0) 
     {
-        vspd = -16;
+        vspd = jspd*1.25;
         audio_play_sound(snd_jump, 5, false);
     }
     else if(space) // Running jump height
     {
-        vspd = -12;
+        vspd = jspd;
         audio_play_sound(snd_jump, 5, false);
     }
     // Player is on ground
     if(hspd==0)
-        sprite_index = spr_player_idle;
+        sprite_index = spr_player1_idle;
     else
     {
-        sprite_index = spr_player_walk;
+        //sprite_index = spr_player1_walk;
         image_speed = .6;
     }
     if(right)
@@ -53,6 +53,7 @@ else
         hspd = 0;
 }
 
+//Face direction of movement
 if(hspd != 0)
     image_xscale = sign(hspd);
 
@@ -68,8 +69,8 @@ move(Solid);
 
 // Check for ledge grab
 var falling = y-yprevious > 0;
-var wasnt_wall = !position_meeting(x+17*image_xscale, yprevious, Solid);
-var is_wall = position_meeting(x+17*image_xscale, y, Solid);
+var wasnt_wall = !position_meeting(x+33*image_xscale, yprevious, Solid);
+var is_wall = position_meeting(x+33*image_xscale, y, Solid);
 
 if(falling && wasnt_wall && is_wall)
 {
@@ -82,7 +83,7 @@ if(falling && wasnt_wall && is_wall)
     while(position_meeting(x+17*image_xscale, y-1, Solid))
         y-=1;
     
-    sprite_index = spr_player_ledgegrab;
+    //sprite_index = spr_player1_ledgegrab;
     state = ledge_grab_state;
     // Ledge grab sound
     audio_emitter_pitch(audio_em, 1.5);

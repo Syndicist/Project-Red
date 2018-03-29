@@ -17,6 +17,9 @@
     <sound>sound\snd_boss_music</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="Player1">
+      <sprite>sprites\spr_player1_idle</sprite>
+    </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
       <sprite>sprites\spr_player_hurt</sprite>
@@ -25,7 +28,6 @@
       <sprite>sprites\spr_player_exit</sprite>
       <sprite>sprites\spr_player_jump</sprite>
       <sprite>sprites\spr_player_mask</sprite>
-      <sprite>sprites\spr_player1_idle</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_solid</sprite>
@@ -113,6 +115,7 @@
   <objects name="objects">
     <objects name="Player">
       <object>objects\Player</object>
+      <object>objects\Player1</object>
       <object>objects\PlayerStats</object>
     </objects>
     <objects name="Level">

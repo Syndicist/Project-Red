@@ -9,16 +9,15 @@ if(!place_meeting(x, y+1, Solid))
 else
 {
     vspd = 0;
-    apply_friction(acc);
 }
 
 move_hurt(Solid);
-
+// TODO: add hurt alarm.
 if(hspd = 0 && vspd = 0)
 {
     if(PlayerStats.hp <= 0)
     {
-        PlayerStats.score -= 5;
+        //PlayerStats.score -= 5;
         PlayerStats.hp = PlayerStats.maxhp;
         audio_stop_all();
         room_restart();

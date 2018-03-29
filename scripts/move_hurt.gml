@@ -9,7 +9,7 @@ if(place_meeting(x+hspd, y, Solid))
     }
     hspd = -(hspd/2);
 }
-x += hspd;
+x += 3;
 
 // Vertical Collisions
 if(place_meeting(x, y+vspd, collision_object))
@@ -22,4 +22,4 @@ if(place_meeting(x, y+vspd, collision_object))
     if(abs(vspd)<2)
         vspd = 0;
 }
-y+= vspd;
+y+= 3;
