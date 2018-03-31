@@ -19,6 +19,8 @@
   <sprites name="sprites">
     <sprites name="Player1">
       <sprite>sprites\spr_player1_idle</sprite>
+      <sprite>sprites\spr_player1_attack</sprite>
+      <sprite>sprites\spr_player1_mask</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>

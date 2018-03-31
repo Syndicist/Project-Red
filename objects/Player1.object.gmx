@@ -6,7 +6,7 @@
   <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_player1_mask</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialize Player
-spd = 8;
-jspd = -12;
+spd = 6;
+jspd = -10;
 hspd = 0;
 vspd = 0;
 grav = 1.5;
