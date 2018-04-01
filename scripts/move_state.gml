@@ -6,8 +6,10 @@ if(!place_meeting(x,y+1,Solid))
     
     // Player is in the air
     // TODO: sprite_index = spr_player1_jump;
+    sprite_index = spr_player1_run;
+    image_index = 0;
     image_speed = 0;
-    image_index = (vspd > 0);    
+    //image_index = (vspd > 0);    
     
     // Control jump height
     if(space_release && vspd < -8)
@@ -37,8 +39,8 @@ else
         sprite_index = spr_player1_idle;
     else
     {
-        // TODO: sprite_index = spr_player1_walk;
-        image_speed = .6;
+        sprite_index = spr_player1_run;
+        image_speed = .3;
     }
     if(right)
         hspd = spd;
@@ -60,10 +62,13 @@ if(place_meeting(x, y+vspd+1, Solid) && vspd > 0)
     audio_play_sound_on(audio_em, snd_step, false, 6);
 }
 
-// TODO: Attack
+// Attack forward
 if(attack)
 {
-    sprite_index = spr_player1_attack;
+    hspd = 0;
+    vspd = 0;
+    alarm[1] = 20;
+    state = attack_state;
 }
 
 move(Solid);

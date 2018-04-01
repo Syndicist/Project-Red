@@ -19,8 +19,12 @@
   <sprites name="sprites">
     <sprites name="Player1">
       <sprite>sprites\spr_player1_idle</sprite>
-      <sprite>sprites\spr_player1_attack</sprite>
+      <sprite>sprites\spr_player1_slash_attack</sprite>
       <sprite>sprites\spr_player1_mask</sprite>
+      <sprite>sprites\spr_player1_run</sprite>
+      <sprites name="Player Effects">
+        <sprite>sprites\spr_player_slash_attack_effect</sprite>
+      </sprites>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
@@ -83,6 +87,7 @@
       <script>scripts\ledge_grab_state.gml</script>
       <script>scripts\hurt_state.gml</script>
       <script>scripts\exit_state.gml</script>
+      <script>scripts\attack_state.gml</script>
     </scripts>
     <scripts name="Enemy States">
       <scripts name="Mooks">
@@ -119,6 +124,7 @@
       <object>objects\Player</object>
       <object>objects\Player1</object>
       <object>objects\PlayerStats</object>
+      <object>objects\PlayerAttackEffect</object>
     </objects>
     <objects name="Level">
       <object>objects\Solid</object>

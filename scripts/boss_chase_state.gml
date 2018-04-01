@@ -1,5 +1,5 @@
 ///boss_chase_state
-var dis = point_distance(x, y, Player.x, y);
+var dis = point_distance(x, y, Player1.x, y);
 if(dis < sprite_width/2-16)
 {
     state = boss_smash_state;
@@ -7,6 +7,6 @@ if(dis < sprite_width/2-16)
     hspd=0;
 }
 else
-    hspd = (Player.x - x) * .05;
+    hspd = (Player1.x - x) * .05;
     
 move(Solid);

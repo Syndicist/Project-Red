@@ -1,5 +1,5 @@
 ///boss_idle_state
-var dis = point_distance(x, y, Player.x, Player.y);
+var dis = point_distance(x, y, Player1.x, Player1.y);
 
 if(dis <= 128)
 {
