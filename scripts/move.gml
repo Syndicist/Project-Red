@@ -1,7 +1,7 @@
 ///move(collision_object)
 var collision_object = argument0;
 // Horizontal Collisons
-if(place_meeting(x+hspd, y, Solid))
+if(place_meeting(x+hspd, y, collision_object))
 {
     while(!place_meeting(x+sign(hspd), y, collision_object))
     {
@@ -20,4 +20,4 @@ if(place_meeting(x, y+vspd, collision_object))
     }
     vspd = 0;
 }
-y+= vspd;
+y += vspd;

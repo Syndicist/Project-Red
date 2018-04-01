@@ -1,6 +1,6 @@
 ///hurt_state
 
-sprite_index = spr_player_hurt;
+// TODO: sprite_index = spr_player_hurt;
 if(hspd != 0)
     image_xscale = sign(hspd);
 
@@ -12,8 +12,8 @@ else
 }
 
 move_hurt(Solid);
-// TODO: add hurt alarm.
-if(hspd = 0 && vspd = 0)
+
+if(place_meeting(x, y+1, Solid) || place_meeting(x+1, y, Solid))
 {
     if(PlayerStats.hp <= 0)
     {

@@ -1,15 +1,15 @@
 ///move_hurt(collision_object)
 var collision_object = argument0;
 // Horizontal Collisons
-if(place_meeting(x+hspd, y, Solid))
+if(place_meeting(x+hspd, y, collision_object))
 {
     while(!place_meeting(x+sign(hspd), y, collision_object))
     {
         x += sign(hspd);
     }
-    hspd = -(hspd/2);
+    hspd = 0;
 }
-x += 3;
+x += hspd/2;
 
 // Vertical Collisions
 if(place_meeting(x, y+vspd, collision_object))
@@ -18,8 +18,7 @@ if(place_meeting(x, y+vspd, collision_object))
     {
         y += sign(vspd);
     }
-    vspd = -(vspd/2);
-    if(abs(vspd)<2)
-        vspd = 0;
+    vspd = 0;
 }
-y+= 3;
+y += vspd;
+
