@@ -1,6 +1,4 @@
-///attack_state
-sprite_index = spr_player1_slash_attack
-image_speed = .2;
+/// attack_state
 
 // Start attack when animation reaches appropriate frame
 if(alarm[1]<=7 && alarm[1]>4)

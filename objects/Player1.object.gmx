@@ -33,8 +33,6 @@ vspd = 0;
 grav = 1.5;
 state = move_state;
 
-last_sprite = spr_player1_idle;
-
 // Player input 
 get_input();
 
@@ -134,17 +132,9 @@ audio_em = audio_emitter_create();
             <kind>1</kind>
             <string>/// Control Player's state
 
-if (last_sprite != sprite_index) 
-{
-   image_index = 0;
-   last_sprite = sprite_index;
-}
-
 get_input();
 
 script_execute(state);
-
-
 </string>
           </argument>
         </arguments>
