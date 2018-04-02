@@ -10,7 +10,7 @@
   <bbox_left>0</bbox_left>
   <bbox_right>31</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>12</bbox_bottom>
+  <bbox_bottom>31</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -20,6 +20,7 @@
   <width>32</width>
   <height>32</height>
   <frames>
-    <frame index="0">images\spr_dirt_top_0.png</frame>
+    <frame index="0">images\spr_grass_0.png</frame>
+    <frame index="1">images\spr_grass_1.png</frame>
   </frames>
 </sprite>

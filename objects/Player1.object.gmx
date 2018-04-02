@@ -27,17 +27,42 @@
             <kind>1</kind>
             <string>/// Initialize Player
 spd = 6;
-jspd = -10;
+jspd = -12;
 hspd = 0;
 vspd = 0;
 grav = 1.5;
 state = move_state;
+
+last_sprite = spr_player1_idle;
 
 // Player input 
 get_input();
 
 // Audio emitter
 audio_em = audio_emitter_create();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Attack cooldown
 </string>
           </argument>
         </arguments>
@@ -108,6 +133,12 @@ audio_em = audio_emitter_create();
           <argument>
             <kind>1</kind>
             <string>/// Control Player's state
+
+if (last_sprite != sprite_index) 
+{
+   image_index = 0;
+   last_sprite = sprite_index;
+}
 
 get_input();
 

@@ -37,11 +37,12 @@
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_solid</sprite>
-      <sprite>sprites\spr_dirt</sprite>
+      <sprite>sprites\spr_grass</sprite>
+      <sprite>sprites\spr_grass_top</sprite>
       <sprite>sprites\slant</sprite>
       <sprite>sprites\spr_entrance</sprite>
       <sprite>sprites\spr_exit</sprite>
-      <sprite>sprites\spr_dirt_top</sprite>
+      <sprite>sprites\spr_path</sprite>
       <sprite>sprites\spr_dirt_edge</sprite>
       <sprite>sprites\spr_sapphire</sprite>
       <sprite>sprites\spr_lava</sprite>
@@ -128,7 +129,8 @@
     </objects>
     <objects name="Level">
       <object>objects\Solid</object>
-      <object>objects\Dirt</object>
+      <object>objects\Grass</object>
+      <object>objects\GrassTop</object>
       <object>objects\Slanted</object>
       <object>objects\Entrance</object>
       <object>objects\Exit</object>

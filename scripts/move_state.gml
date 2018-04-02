@@ -35,8 +35,10 @@ else
         audio_play_sound(snd_jump, 5, false);
     }
     // Player is on ground
-    if(hspd==0)
+    if(!right && !left)
+    {
         sprite_index = spr_player1_idle;
+    }
     else
     {
         sprite_index = spr_player1_run;
@@ -63,11 +65,12 @@ if(place_meeting(x, y+vspd+1, Solid) && vspd > 0)
 }
 
 // Attack forward
-if(attack)
+if(attack && alarm[2]<=0)
 {
     hspd = 0;
     vspd = 0;
-    alarm[1] = 20;
+    alarm[1] = 18;
+    alarm[2] = 40;
     state = attack_state;
 }
 
