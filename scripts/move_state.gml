@@ -7,7 +7,7 @@ if(!place_meeting(x,y+1,Solid))
     // Player is in the air
     // TODO: sprite_index = spr_player1_jump;
     sprite_index = spr_player1_run;
-    image_index = 0;
+    image_index = 4;
     image_speed = 0;
     //image_index = (vspd > 0);    
     
@@ -80,21 +80,23 @@ move(Solid);
 
 // Check for ledge grab
 var falling = y-yprevious > 0;
-var wasnt_wall = !position_meeting(x+10*image_xscale, yprevious, Solid);
-var is_wall = position_meeting(x+10*image_xscale, y, Solid);
+// Set how far and high ledgegrab should activate
+var wasnt_wall = !position_meeting(x+13*image_xscale, yprevious-16, Solid);
+var is_wall = position_meeting(x+13*image_xscale, y-16, Solid);
 
 if(falling && wasnt_wall && is_wall)
 {
     hspd = 0;
     vspd = 0;
     // Snap to ledge side
-    while(!place_meeting(x+image_xscale, y, Solid))//
-        x+=1*image_xscale;
+    while(place_meeting(x+7*image_xscale, y, Solid))//
+        x-=1*image_xscale;
     // Snap to ledge height
-    while(position_meeting(x+16*image_xscale, y-32, Solid))
+    while(position_meeting(x+13*image_xscale, y-1, Solid))
         y-=1;
+    y+=16;
     
-    // TODO: sprite_index = spr_player1_ledgegrab;
+    sprite_change(spr_player1_ledgegrab);
     state = ledge_grab_state;
     // Ledge grab sound
     audio_emitter_pitch(audio_em, 1.5);
