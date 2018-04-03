@@ -82,6 +82,7 @@
       <script>scripts\apply_friction.gml</script>
       <script>scripts\get_input.gml</script>
       <script>scripts\take_damage.gml</script>
+      <script>scripts\sprite_change.gml</script>
     </scripts>
     <scripts name="Player States">
       <script>scripts\move_state.gml</script>

@@ -37,11 +37,11 @@ else
     // Player is on ground
     if(!right && !left)
     {
-        sprite_index = spr_player1_idle;
+        sprite_change(spr_player1_idle);
     }
     else
     {
-        sprite_index = spr_player1_run;
+        sprite_change(spr_player1_run);
         image_speed = .3;
     }
     if(right)
@@ -71,6 +71,8 @@ if(attack && alarm[2]<=0)
     vspd = 0;
     alarm[1] = 18;
     alarm[2] = 40;
+    sprite_change(spr_player1_slash_attack);
+    image_speed = .2;
     state = attack_state;
 }
 
