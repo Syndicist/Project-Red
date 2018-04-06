@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialize Bat
-
+event_inherited();
 image_speed = .25;
 
 hspd = 0;
@@ -83,6 +83,7 @@ audio_play_sound(snd_bat, 3, false);
           <argument>
             <kind>1</kind>
             <string>/// Execute state
+event_inherited();
 script_execute(state);
 </string>
           </argument>

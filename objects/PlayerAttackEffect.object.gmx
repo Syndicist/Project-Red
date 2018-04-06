@@ -52,10 +52,11 @@ image_xscale = Player1.image_xscale;
           <argument>
             <kind>1</kind>
             <string>/// Hit enemy
-with (other)
-    instance_destroy();
-    
-//TODO: don't instantly destroy enemy, have them take damage.
+with(other)
+{
+    hp-=1;
+    // TODO: set alarm to keep enemy from getting more than once by one attack alarm[0] = ;
+}
 </string>
           </argument>
         </arguments>

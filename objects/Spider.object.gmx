@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialize spider
+event_inherited();
+
 image_speed = 0;
 image_index = 0;
 
@@ -106,6 +108,8 @@ audio_play_sound(snd_spider, 3, false);
           <argument>
             <kind>1</kind>
             <string>/// Execute state
+event_inherited();
+
 script_execute(state);
 </string>
           </argument>
