@@ -213,7 +213,6 @@
     <instance objName="GrassTop" x="320" y="160" name="inst_88619B37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GrassTop" x="352" y="160" name="inst_4176E55E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bat" x="336" y="208" name="inst_04B84808" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Snake" x="368" y="304" name="inst_218B3353" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GrassTop" x="480" y="224" name="inst_1E2454C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GrassTop" x="224" y="320" name="inst_8AAF56AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GrassTop" x="256" y="320" name="inst_63CAE058" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

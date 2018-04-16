@@ -51,10 +51,10 @@
     <sprites name="Enemies">
       <sprite>sprites\spr_enemy_mask</sprite>
       <sprites name="Mooks">
-        <sprite>sprites\spr_snake</sprite>
         <sprite>sprites\spr_spider</sprite>
         <sprite>sprites\spr_bat_fly</sprite>
         <sprite>sprites\spr_bat_idle</sprite>
+        <sprite>sprites\spr_woodeater_idle</sprite>
       </sprites>
       <sprites name="Bosses">
         <sprite>sprites\spr_boss</sprite>
@@ -98,13 +98,13 @@
           <script>scripts\spider_idle_state.gml</script>
           <script>scripts\spider_jump_state.gml</script>
         </scripts>
-        <scripts name="Snake States">
-          <script>scripts\snake_move_right_state.gml</script>
-          <script>scripts\snake_move_left_state.gml</script>
-        </scripts>
         <scripts name="Bat States">
           <script>scripts\bat_idle_state.gml</script>
           <script>scripts\bat_chase_state.gml</script>
+        </scripts>
+        <script>scripts\enemy_move_state.gml</script>
+        <scripts name="Woodeater Stats">
+          <script>scripts\woodeater_attack_state.gml</script>
         </scripts>
       </scripts>
       <scripts name="Bosses">
@@ -145,7 +145,7 @@
       <objects name="mooks">
         <object>objects\Spider</object>
         <object>objects\Bat</object>
-        <object>objects\Snake</object>
+        <object>objects\Woodeater</object>
       </objects>
       <objects name="Bosses">
         <object>objects\Boss</object>

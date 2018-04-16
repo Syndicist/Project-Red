@@ -175,7 +175,6 @@
     <instance objName="Solid" x="208" y="352" name="inst_760CE69C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="240" y="352" name="inst_9DB83558" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Solid" x="272" y="288" name="inst_8F07639E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Snake" x="240" y="432" name="inst_A838B9A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
