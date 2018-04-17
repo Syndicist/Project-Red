@@ -54,7 +54,11 @@
         <sprite>sprites\spr_spider</sprite>
         <sprite>sprites\spr_bat_fly</sprite>
         <sprite>sprites\spr_bat_idle</sprite>
-        <sprite>sprites\spr_woodeater_idle</sprite>
+        <sprite>sprites\spr_terminite_idle</sprite>
+        <sprite>sprites\spr_terminite_hitbox</sprite>
+        <sprite>sprites\spr_terminite_attack_effect</sprite>
+        <sprite>sprites\spr_terminite_attack</sprite>
+        <sprite>sprites\spr_terminite_walk</sprite>
       </sprites>
       <sprites name="Bosses">
         <sprite>sprites\spr_boss</sprite>
@@ -102,10 +106,10 @@
           <script>scripts\bat_idle_state.gml</script>
           <script>scripts\bat_chase_state.gml</script>
         </scripts>
-        <script>scripts\enemy_move_state.gml</script>
-        <scripts name="Woodeater Stats">
-          <script>scripts\woodeater_attack_state.gml</script>
+        <scripts name="Terminite Stats">
+          <script>scripts\terminite_attack_state.gml</script>
         </scripts>
+        <script>scripts\enemy_move_state.gml</script>
       </scripts>
       <scripts name="Bosses">
         <scripts name="Boss States">
@@ -142,10 +146,12 @@
     </objects>
     <objects name="Enemies">
       <object>objects\Enemy</object>
+      <object>objects\EnemyAttackEffect</object>
       <objects name="mooks">
         <object>objects\Spider</object>
         <object>objects\Bat</object>
-        <object>objects\Woodeater</object>
+        <object>objects\Terminite</object>
+        <object>objects\TerminiteAttackEffect</object>
       </objects>
       <objects name="Bosses">
         <object>objects\Boss</object>
