@@ -28,9 +28,10 @@
             <string>/// Initialize terminite
 event_inherited();
 image_speed = .1;
-spd = choose(-1,1);
+//spd = choose(-1,1);
+spd = 1;
 type = types.terminite;
-sight = 75;
+sight = 45;
 
 state = enemy_move_state;
 </string>

@@ -9,7 +9,7 @@ if(!place_meeting(x,y+1,Solid))
     sprite_index = spr_player1_run;
     image_index = 4;
     image_speed = 0;
-    //image_index = (vspd > 0);    
+    //image_index = (vspd > 0);    change jump frame
     
     // Control jump height
     if(space_release && vspd < -8)
